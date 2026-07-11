@@ -11,7 +11,7 @@ const games = [
   {
     title: "Grannie's Solitare",
     description: "A clean, focused Klondike card table.",
-    url: "https://grannies-solitare.fantomzone.app",
+    url: "https://grannies.fantomzone.app",
     status: "Live",
     accent: "green"
   }
