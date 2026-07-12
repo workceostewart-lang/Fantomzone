@@ -34,13 +34,25 @@ const games = [
     url: "https://grannies.fantomzone.app",
     status: "Live",
     accent: "green"
+  },
+  {
+    title: "CrossWords",
+    description: "A relaxed swipe word-search with themed boards, hints, and no timer.",
+    url: "https://crosswords.fantomzone.app",
+    status: "Live",
+    accent: "gold"
   }
 ];
 
 const upcoming = [
-  "New cabinet opening soon",
   "More browser games in development"
 ];
+
+const artLabels = {
+  "Ultimate PONG!!": "PONG",
+  "Grannie's Solitare": "A K Q",
+  CrossWords: "WORD"
+};
 
 document.querySelector("#app").innerHTML = `
   <main class="shell">
@@ -74,7 +86,7 @@ document.querySelector("#app").innerHTML = `
             (game) => `
               <article class="game-card ${game.accent}">
                 <div class="game-art" aria-hidden="true">
-                  <span>${game.title === "Ultimate PONG!!" ? "PONG" : "A K Q"}</span>
+                  <span>${artLabels[game.title]}</span>
                 </div>
                 <div class="game-copy">
                   <div class="game-meta">
