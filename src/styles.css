@@ -205,6 +205,17 @@ h2 {
   text-shadow: 0 0 28px rgba(251, 191, 36, 0.7);
 }
 
+.game-card.coral .game-art {
+  background:
+    linear-gradient(135deg, rgba(251, 113, 133, 0.28), transparent 45%),
+    linear-gradient(90deg, rgba(251, 146, 60, 0.24) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(251, 146, 60, 0.18) 1px, transparent 1px),
+    #241117;
+  background-size: auto, 34px 34px, 34px 34px;
+  color: #ffe8df;
+  text-shadow: 0 0 28px rgba(251, 113, 133, 0.72);
+}
+
 .game-copy {
   padding: 24px;
 }

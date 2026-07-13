@@ -41,6 +41,13 @@ const games = [
     url: "https://crosswords.fantomzone.app",
     status: "Live",
     accent: "gold"
+  },
+  {
+    title: "Fill the Hole",
+    description: "A block puzzle where every piece has a place to fit.",
+    url: "https://block-puzzle-fill-the-hole-attempt-dos.workceostewart.workers.dev/",
+    status: "Live",
+    accent: "coral"
   }
 ];
 
@@ -51,7 +58,8 @@ const upcoming = [
 const artLabels = {
   "Ultimate PONG!!": "PONG",
   "Grannie's Solitare": "A K Q",
-  CrossWords: "WORD"
+  CrossWords: "WORD",
+  "Fill the Hole": "BLOCKS"
 };
 
 document.querySelector("#app").innerHTML = `
