@@ -43,6 +43,14 @@ const games = [
     accent: "gold"
   },
   {
+    title: "Meow Clicker",
+    description: "Tap through ten cat worlds, unlock new skins, and purr your way to cosmic prestige.",
+    url: "https://meow-clicker.fantomzone.app",
+    status: "New",
+    accent: "meow",
+    image: "/meow-clicker-cat.png"
+  },
+  {
     title: "Fill the Hole",
     description: "A block puzzle where every piece has a place to fit.",
     url: "https://block-puzzle-fill-the-hole-attempt-dos.workceostewart.workers.dev/",
@@ -59,6 +67,7 @@ const artLabels = {
   "Ultimate PONG!!": "PONG",
   "Grannie's Solitare": "A K Q",
   CrossWords: "WORD",
+  "Meow Clicker": "MEOW",
   "Fill the Hole": "BLOCKS"
 };
 
@@ -95,6 +104,7 @@ document.querySelector("#app").innerHTML = `
               <article class="game-card ${game.accent}">
                 <div class="game-art" aria-hidden="true">
                   <span>${artLabels[game.title]}</span>
+                  ${game.image ? `<img src="${game.image}" alt="" loading="lazy" decoding="async" />` : ""}
                 </div>
                 <div class="game-copy">
                   <div class="game-meta">

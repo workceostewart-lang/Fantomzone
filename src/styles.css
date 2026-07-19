@@ -205,6 +205,71 @@ h2 {
   text-shadow: 0 0 28px rgba(251, 191, 36, 0.7);
 }
 
+.game-card.meow .game-art {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 112%, rgba(244, 114, 182, 0.42), transparent 44%),
+    linear-gradient(135deg, rgba(192, 132, 252, 0.28), transparent 46%),
+    #1b1029;
+  color: #fff1fb;
+  text-shadow:
+    0 0 18px rgba(244, 114, 182, 0.82),
+    0 0 42px rgba(168, 85, 247, 0.58);
+}
+
+.game-card.meow .game-art span {
+	position: absolute;
+	bottom: 16px;
+	left: 18px;
+	z-index: 3;
+	padding: 7px 10px;
+	border: 1px solid rgba(255, 255, 255, 0.22);
+	border-radius: 999px;
+	background: rgba(15, 8, 28, 0.58);
+	font-size: 0.78rem;
+	letter-spacing: 0.13em;
+	backdrop-filter: blur(10px);
+}
+
+.game-card.meow .game-art img {
+	position: absolute;
+	right: -4px;
+	bottom: -24px;
+	z-index: 2;
+	width: min(74%, 300px);
+	height: auto;
+	filter: drop-shadow(0 18px 24px rgba(0, 0, 0, 0.36));
+}
+
+.game-card.meow .game-art::before,
+.game-card.meow .game-art::after {
+  position: absolute;
+  width: 118px;
+  height: 96px;
+  background:
+    radial-gradient(circle at 18% 28%, rgba(251, 207, 232, 0.17) 0 9%, transparent 10%),
+    radial-gradient(circle at 40% 14%, rgba(251, 207, 232, 0.17) 0 9%, transparent 10%),
+    radial-gradient(circle at 64% 14%, rgba(251, 207, 232, 0.17) 0 9%, transparent 10%),
+    radial-gradient(circle at 86% 28%, rgba(251, 207, 232, 0.17) 0 9%, transparent 10%),
+    radial-gradient(ellipse at 52% 70%, rgba(251, 207, 232, 0.17) 0 28%, transparent 29%);
+  content: "";
+  pointer-events: none;
+}
+
+.game-card.meow .game-art::before {
+  top: -2px;
+  right: 5%;
+  transform: rotate(18deg);
+}
+
+.game-card.meow .game-art::after {
+  bottom: -14px;
+  left: 4%;
+  transform: scale(0.78) rotate(-22deg);
+}
+
 .game-card.coral .game-art {
   background:
     linear-gradient(135deg, rgba(251, 113, 133, 0.28), transparent 45%),
