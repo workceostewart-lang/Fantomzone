@@ -51,6 +51,13 @@ const games = [
     image: "/meow-clicker-cat.png"
   },
   {
+    title: "LAST MAN",
+    description: "Race to empty your hand against strategic CPU rivals in a fast, colorful card showdown.",
+    url: "https://last-man.fantomzone.app",
+    status: "New",
+    accent: "coral"
+  },
+  {
     title: "Fill the Hole",
     description: "A block puzzle where every piece has a place to fit.",
     url: "https://block-puzzle-fill-the-hole-attempt-dos.workceostewart.workers.dev/",
@@ -68,6 +75,7 @@ const artLabels = {
   "Grannie's Solitare": "A K Q",
   CrossWords: "WORD",
   "Meow Clicker": "MEOW",
+  "LAST MAN": "LAST",
   "Fill the Hole": "BLOCKS"
 };
 
