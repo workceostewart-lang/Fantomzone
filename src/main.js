@@ -22,6 +22,14 @@ clearLegacyGameCache();
 
 const games = [
   {
+    title: "Family War",
+    description: "Call the survey answers, dodge three strikes, and challenge another family on the same screen or from a private online lobby.",
+    url: "https://family-war.fantomzone.app",
+    status: "New",
+    accent: "family",
+    image: "https://family-war.fantomzone.app/family-war-og.png"
+  },
+  {
     title: "Ultimate PONG!!",
     description: "Arcade paddle action with a loud neon pulse.",
     url: "https://ultimate-pong.fantomzone.app",
@@ -71,6 +79,7 @@ const upcoming = [
 ];
 
 const artLabels = {
+  "Family War": "OWN THE BOARD",
   "Ultimate PONG!!": "PONG",
   "Grannie's Solitare": "A K Q",
   CrossWords: "WORD",
