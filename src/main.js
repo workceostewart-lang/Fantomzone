@@ -22,6 +22,14 @@ clearLegacyGameCache();
 
 const games = [
   {
+    title: "Wheel of Goods",
+    description: "Spin the rainbow wheel, name the top survey answers, and build a game-night fortune.",
+    url: "https://wheel-of-goods.fantomzone.app",
+    status: "New",
+    accent: "wheel",
+    image: "https://wheel-of-goods.fantomzone.app/og.png"
+  },
+  {
     title: "Family War",
     description: "Call the survey answers, dodge three strikes, and challenge another family on the same screen or from a private online lobby.",
     url: "https://family-war.fantomzone.app",
@@ -79,6 +87,7 @@ const upcoming = [
 ];
 
 const artLabels = {
+  "Wheel of Goods": "SPIN • ANSWER • WIN",
   "Family War": "OWN THE BOARD",
   "Ultimate PONG!!": "PONG",
   "Grannie's Solitare": "A K Q",

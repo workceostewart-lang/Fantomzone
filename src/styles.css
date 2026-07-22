@@ -195,6 +195,52 @@ h2 {
   color: #f3fbff;
 }
 
+.game-card.wheel .game-art {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 211, 61, 0.34), transparent 34%),
+    linear-gradient(135deg, rgba(57, 117, 255, 0.4), rgba(149, 85, 237, 0.3)),
+    #111856;
+  color: #ffffff;
+}
+
+.game-card.wheel .game-art::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, transparent 30%, rgba(17, 24, 86, 0.88));
+  content: "";
+  pointer-events: none;
+}
+
+.game-card.wheel .game-art span {
+  position: absolute;
+  bottom: 16px;
+  left: 18px;
+  z-index: 3;
+  padding: 7px 10px;
+  border: 1px solid rgba(255, 211, 61, 0.62);
+  border-radius: 999px;
+  background: rgba(17, 24, 86, 0.78);
+  color: #fff7ca;
+  font-size: 0.76rem;
+  letter-spacing: 0.13em;
+  text-shadow: 0 0 18px rgba(255, 211, 61, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.game-card.wheel .game-art img {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .game-card.family .game-art::after {
   position: absolute;
   inset: 0;
