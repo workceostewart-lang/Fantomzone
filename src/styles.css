@@ -275,6 +275,51 @@ h2 {
   opacity: 0.92;
 }
 
+.game-card.roulette .game-art {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 78% 50%, rgba(214, 173, 84, 0.28), transparent 42%),
+    linear-gradient(135deg, #071426, #0d284c 58%, #08111e);
+  color: #f4d483;
+}
+
+.game-card.roulette .game-art::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, transparent 38%, rgba(4, 10, 19, 0.88));
+  content: "";
+  pointer-events: none;
+}
+
+.game-card.roulette .game-art span {
+  position: absolute;
+  bottom: 16px;
+  left: 18px;
+  z-index: 3;
+  padding: 7px 10px;
+  border: 1px solid rgba(244, 212, 131, 0.48);
+  border-radius: 999px;
+  background: rgba(4, 12, 24, 0.76);
+  font-size: 0.76rem;
+  letter-spacing: 0.13em;
+  text-shadow: 0 0 18px rgba(214, 173, 84, 0.68);
+  backdrop-filter: blur(10px);
+}
+
+.game-card.roulette .game-art img {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.94;
+}
+
 .game-card.green .game-art {
   background:
     linear-gradient(135deg, rgba(74, 222, 128, 0.22), transparent 42%),

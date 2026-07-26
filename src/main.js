@@ -38,6 +38,14 @@ const games = [
     image: "https://family-war.fantomzone.app/family-war-og.png"
   },
   {
+    title: "Gambl Roulette",
+    description: "Take your seat at a premium European roulette table with live dealer prompts, casino sound, and touch-first betting.",
+    url: "https://gambl-roulette.fantomzone.app",
+    status: "New",
+    accent: "roulette",
+    image: "https://gambl-roulette.fantomzone.app/og.png"
+  },
+  {
     title: "Ultimate PONG!!",
     description: "Arcade paddle action with a loud neon pulse.",
     url: "https://ultimate-pong.fantomzone.app",
@@ -89,6 +97,7 @@ const upcoming = [
 const artLabels = {
   "Wheel of Goods": "SPIN • ANSWER • WIN",
   "Family War": "OWN THE BOARD",
+  "Gambl Roulette": "PLACE YOUR BETS",
   "Ultimate PONG!!": "PONG",
   "Grannie's Solitare": "A K Q",
   CrossWords: "WORD",
