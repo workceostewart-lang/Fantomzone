@@ -1,6 +1,6 @@
 name: FantomZone Game Hub
-current_focus: Keep Wheel of Goods reachable on mobile and make its menu cover independent of the game subdomain.
-status: complete
+current_focus: Restore the reverted Wheel of Goods iOS card without changing any other game.
+status: in_progress
 
 wheel_of_goods_mobile_fix:
   failure_mode:
@@ -25,3 +25,21 @@ deployment:
   hub_domain: https://fantomzone.app
   hub_github: git@github.com:workceostewart-lang/Fantomzone.git
   game_fallback: https://wheel-of-goods.unknownfigure.chatgpt.site
+
+recurrence_2026_07_27:
+  cause:
+    - Cloudflare deployment e2160804 contained the fixed same-origin cover and stable game link.
+    - Three later fantomzone-home deployments replaced it with an older homepage build.
+    - GitHub main remained correct, confirming a stale local deployment rather than an application failure.
+  containment:
+    - Preserve every non-Wheel game entry and destination exactly.
+    - Use a new versioned same-origin cover filename to bypass device and edge asset caches.
+    - Add a predeploy guard that blocks dirty, non-main, or GitHub-stale hub deployments.
+    - Use the repository-local Wrangler config explicitly during deployment.
+  verification:
+    build: passed_vite_8_1_4
+    non_wheel_game_links: passed_10_of_10_unchanged
+    ios_cover: passed_local_390x844_versioned_same_origin
+    ios_game_launch: passed_live_390x844_no_overflow_no_console_errors
+    cloudflare_deploy: pending
+    github_push: pending

@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
-    "deploy": "wrangler deploy",
+    "predeploy": "node scripts/check-deploy-source.mjs",
+    "deploy": "wrangler deploy --config wrangler.jsonc",
     "preview": "vite preview --host 127.0.0.1"
   },
   "dependencies": {

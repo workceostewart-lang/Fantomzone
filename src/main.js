@@ -1,5 +1,7 @@
 import "./styles.css";
 
+document.documentElement.dataset.hubRevision = "2026-07-27-wheel-ios-2";
+
 const clearLegacyGameCache = () => {
   if (!window.location.hostname.endsWith("fantomzone.app")) return;
 
@@ -37,7 +39,7 @@ const games = [
     url: "https://wheel-of-goods.unknownfigure.chatgpt.site",
     status: "New",
     accent: "wheel",
-    image: "/wheel-of-goods-cover.png",
+    image: "/wheel-of-goods-cover-20260727.png",
     imageLoading: "eager"
   },
   {
