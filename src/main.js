@@ -54,6 +54,14 @@ const games = [
     image: "https://gambl-roulette.fantomzone.app/og.png"
   },
   {
+    title: "Gambl Poker",
+    description: "Read the table and own the pot in a premium Texas Hold'em game with CPU rivals, casino sound, a guided tutorial, and a fully visible mobile table.",
+    url: "https://gambl-poker.fantomzone.app",
+    status: "New",
+    accent: "roulette",
+    image: "https://gambl-poker.fantomzone.app/og.png"
+  },
+  {
     title: "Ultimate PONG!!",
     description: "Arcade paddle action with a loud neon pulse.",
     url: "https://ultimate-pong.fantomzone.app",
@@ -107,6 +115,7 @@ const artLabels = {
   "Wheel of Goods": "SPIN • ANSWER • WIN",
   "Family War": "OWN THE BOARD",
   "Gambl Roulette": "PLACE YOUR BETS",
+  "Gambl Poker": "OWN THE POT",
   "Ultimate PONG!!": "PONG",
   "Grannie's Solitare": "A K Q",
   CrossWords: "WORD",
