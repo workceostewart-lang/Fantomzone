@@ -56,10 +56,10 @@ const games = [
   {
     title: "Gambl Poker",
     description: "Read the table and own the pot in a premium Texas Hold'em game with CPU rivals, casino sound, a guided tutorial, and a fully visible mobile table.",
-    url: "https://gambl-poker.fantomzone.app",
+    url: "https://gambl-poker.unknownfigure.chatgpt.site",
     status: "New",
     accent: "roulette",
-    image: "https://gambl-poker.fantomzone.app/og.png"
+    image: "https://gambl-poker.unknownfigure.chatgpt.site/og.png"
   },
   {
     title: "Ultimate PONG!!",
