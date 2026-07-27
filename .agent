@@ -1,6 +1,6 @@
 name: FantomZone Game Hub
 current_focus: Restore the reverted Wheel of Goods iOS card without changing any other game.
-status: in_progress
+status: complete
 
 wheel_of_goods_mobile_fix:
   failure_mode:
@@ -39,7 +39,7 @@ recurrence_2026_07_27:
   verification:
     build: passed_vite_8_1_4
     non_wheel_game_links: passed_10_of_10_unchanged
-    ios_cover: passed_local_390x844_versioned_same_origin
+    ios_cover: passed_live_390x844_versioned_same_origin_1731x909
     ios_game_launch: passed_live_390x844_no_overflow_no_console_errors
-    cloudflare_deploy: pending
-    github_push: pending
+    cloudflare_deploy: passed_version_8bfdd932-e49c-4f51-8c21-c999c133c184
+    github_push: passed_main_a817ca8
