@@ -59,7 +59,7 @@ const games = [
     url: "https://gambl-poker.unknownfigure.chatgpt.site",
     status: "New",
     accent: "roulette",
-    image: "https://gambl-poker.unknownfigure.chatgpt.site/og.png"
+    image: "/gambl-poker-cover.png"
   },
   {
     title: "Ultimate PONG!!",
