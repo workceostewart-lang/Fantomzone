@@ -22,6 +22,14 @@ clearLegacyGameCache();
 
 const games = [
   {
+    title: "Gambl BlackJack",
+    description: "Read the table, build your hand, and own the night at a responsive six-deck blackjack table with full casino actions and sound.",
+    url: "https://gambl-blackjack.unknownfigure.chatgpt.site",
+    status: "New",
+    accent: "blackjack",
+    image: "/gambl-blackjack-og.png"
+  },
+  {
     title: "Wheel of Goods",
     description: "Spin the rainbow wheel, name the top survey answers, and build a game-night fortune.",
     url: "https://wheel-of-goods.fantomzone.app",
@@ -95,6 +103,7 @@ const upcoming = [
 ];
 
 const artLabels = {
+  "Gambl BlackJack": "READ THE TABLE",
   "Wheel of Goods": "SPIN • ANSWER • WIN",
   "Family War": "OWN THE BOARD",
   "Gambl Roulette": "PLACE YOUR BETS",
