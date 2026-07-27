@@ -1,0 +1,27 @@
+name: FantomZone Game Hub
+current_focus: Keep Wheel of Goods reachable on mobile and make its menu cover independent of the game subdomain.
+status: complete
+
+wheel_of_goods_mobile_fix:
+  failure_mode:
+    - The menu cover was hotlinked from wheel-of-goods.fantomzone.app.
+    - The Play button used the same custom subdomain.
+    - A mobile DNS or route failure therefore hid the cover and blocked the game together.
+  implementation:
+    - Bundle the Wheel of Goods cover with the FantomZone homepage.
+    - Load the Wheel of Goods cover eagerly because it is a featured card near the top of the page.
+    - Route the Play button to the stable public Sites deployment.
+    - Give each card a stable game identifier and each Play link a specific accessible label.
+  verification:
+    build: passed_vite_8_1_4
+    mobile_cover: passed_390x844_same_origin_1731x909
+    mobile_navigation: passed_live_menu_to_game_setup
+    horizontal_overflow: none_at_390x844
+    browser_console_errors: none
+    cloudflare_deploy: passed_version_e2160804-1e10-4cd9-aedd-dcdd03db6634
+    github_push: ready
+
+deployment:
+  hub_domain: https://fantomzone.app
+  hub_github: git@github.com:workceostewart-lang/Fantomzone.git
+  game_fallback: https://wheel-of-goods.unknownfigure.chatgpt.site
