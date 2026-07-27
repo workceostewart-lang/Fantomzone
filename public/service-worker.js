@@ -1,3 +1,5 @@
+const REFRESH_VERSION = "2026-07-27-ios-white-screen-refresh";
+
 self.addEventListener("install", (event) => {
   event.waitUntil(self.skipWaiting());
 });
