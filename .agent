@@ -19,7 +19,7 @@ wheel_of_goods_mobile_fix:
     horizontal_overflow: none_at_390x844
     browser_console_errors: none
     cloudflare_deploy: passed_version_e2160804-1e10-4cd9-aedd-dcdd03db6634
-    github_push: ready
+    github_push: passed_main_d8b1755
 
 deployment:
   hub_domain: https://fantomzone.app
