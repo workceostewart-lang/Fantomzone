@@ -1,5 +1,7 @@
 import "./styles.css";
 
+document.documentElement.dataset.hubRevision = "2026-07-27-wheel-ios-2";
+
 const clearLegacyGameCache = () => {
   if (!window.location.hostname.endsWith("fantomzone.app")) return;
 
@@ -22,14 +24,17 @@ clearLegacyGameCache();
 
 const games = [
   {
+    slug: "last-man",
     title: "LAST MAN",
     description: "Enter an enchanted card realm, outplay fair CPU rivals, call your final card, and become the LAST MAN standing on desktop or mobile.",
     url: "https://last-man.fantomzone.app",
     status: "Remastered",
     accent: "lastman",
-    image: "/last-man-cover.jpg"
+    image: "/last-man-cover.jpg",
+    imageLoading: "eager"
   },
   {
+    slug: "gambl-blackjack",
     title: "Gambl BlackJack",
     description: "Read the table, build your hand, and own the night at a responsive six-deck blackjack table with full casino actions and sound.",
     url: "https://gambl-blackjack.unknownfigure.chatgpt.site",
@@ -38,14 +43,17 @@ const games = [
     image: "/gambl-blackjack-og.png"
   },
   {
+    slug: "wheel-of-goods",
     title: "Wheel of Goods",
-    description: "Spin the rainbow wheel, name the top survey answers, and build a game-night fortune.",
-    url: "https://wheel-of-goods.fantomzone.app",
+    description: "Spin the rainbow wheel, call letters to reveal the puzzle, and solve the phrase before your rivals.",
+    url: "https://wheel-of-goods.unknownfigure.chatgpt.site",
     status: "New",
     accent: "wheel",
-    image: "https://wheel-of-goods.fantomzone.app/og.png"
+    image: "/wheel-of-goods-cover-20260727.png",
+    imageLoading: "eager"
   },
   {
+    slug: "family-war",
     title: "Family War",
     description: "Call the survey answers, dodge three strikes, and challenge another family on the same screen or from a private online lobby.",
     url: "https://family-war.fantomzone.app",
@@ -54,6 +62,7 @@ const games = [
     image: "https://family-war.fantomzone.app/family-war-og.png"
   },
   {
+    slug: "gambl-roulette",
     title: "Gambl Roulette",
     description: "Take your seat at a premium European roulette table with live dealer prompts, casino sound, and touch-first betting.",
     url: "https://gambl-roulette.fantomzone.app",
@@ -62,6 +71,7 @@ const games = [
     image: "https://gambl-roulette.fantomzone.app/og.png"
   },
   {
+    slug: "gambl-poker",
     title: "Gambl Poker",
     description: "Read the table and own the pot in a premium Texas Hold'em game with CPU rivals, casino sound, a guided tutorial, and a fully visible mobile table.",
     url: "https://gambl-poker.unknownfigure.chatgpt.site",
@@ -70,6 +80,7 @@ const games = [
     image: "/gambl-poker-cover.png"
   },
   {
+    slug: "ultimate-pong",
     title: "Ultimate PONG!!",
     description: "Arcade paddle action with a loud neon pulse.",
     url: "https://ultimate-pong.fantomzone.app",
@@ -77,6 +88,7 @@ const games = [
     accent: "cyan"
   },
   {
+    slug: "grannies-solitaire",
     title: "Grannie's Solitare",
     description: "A clean, focused Klondike card table.",
     url: "https://grannies.fantomzone.app",
@@ -84,6 +96,7 @@ const games = [
     accent: "green"
   },
   {
+    slug: "crosswords",
     title: "CrossWords",
     description: "A relaxed swipe word-search with themed boards, hints, and no timer.",
     url: "https://crosswords.fantomzone.app",
@@ -91,6 +104,7 @@ const games = [
     accent: "gold"
   },
   {
+    slug: "meow-clicker",
     title: "Meow Clicker",
     description: "Tap through ten cat worlds, unlock new skins, and purr your way to cosmic prestige.",
     url: "https://meow-clicker.fantomzone.app",
@@ -99,6 +113,7 @@ const games = [
     image: "/meow-clicker-cat.png"
   },
   {
+    slug: "fill-the-hole",
     title: "Fill the Hole",
     description: "A block puzzle where every piece has a place to fit.",
     url: "https://block-puzzle-fill-the-hole-attempt-dos.workceostewart.workers.dev/",
@@ -155,10 +170,14 @@ document.querySelector("#app").innerHTML = `
         ${games
           .map(
             (game) => `
-              <article class="game-card ${game.accent}">
+              <article class="game-card ${game.accent}" data-game="${game.slug}">
                 <div class="game-art" aria-hidden="true">
                   <span>${artLabels[game.title]}</span>
-                  ${game.image ? `<img src="${game.image}" alt="" loading="lazy" decoding="async" />` : ""}
+                  ${
+                    game.image
+                      ? `<img src="${game.image}" alt="" loading="${game.imageLoading ?? "lazy"}" decoding="async"${game.imageLoading === "eager" ? ' fetchpriority="high"' : ""} />`
+                      : ""
+                  }
                 </div>
                 <div class="game-copy">
                   <div class="game-meta">
@@ -167,7 +186,7 @@ document.querySelector("#app").innerHTML = `
                   <h3>${game.title}</h3>
                   <p>${game.description}</p>
                 </div>
-                <a class="play-link" href="${game.url}">Play</a>
+                <a class="play-link" href="${game.url}" aria-label="Play ${game.title}">Play</a>
               </article>
             `
           )
