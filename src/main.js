@@ -22,6 +22,14 @@ clearLegacyGameCache();
 
 const games = [
   {
+    title: "LAST MAN",
+    description: "Enter an enchanted card realm, outplay fair CPU rivals, call your final card, and become the LAST MAN standing on desktop or mobile.",
+    url: "https://last-man.fantomzone.app",
+    status: "Remastered",
+    accent: "lastman",
+    image: "/last-man-cover.jpg"
+  },
+  {
     title: "Gambl BlackJack",
     description: "Read the table, build your hand, and own the night at a responsive six-deck blackjack table with full casino actions and sound.",
     url: "https://gambl-blackjack.unknownfigure.chatgpt.site",
@@ -91,13 +99,6 @@ const games = [
     image: "/meow-clicker-cat.png"
   },
   {
-    title: "LAST MAN",
-    description: "Race to empty your hand against strategic CPU rivals in a fast, colorful card showdown.",
-    url: "https://last-man.fantomzone.app",
-    status: "New",
-    accent: "coral"
-  },
-  {
     title: "Fill the Hole",
     description: "A block puzzle where every piece has a place to fit.",
     url: "https://block-puzzle-fill-the-hole-attempt-dos.workceostewart.workers.dev/",
@@ -120,7 +121,7 @@ const artLabels = {
   "Grannie's Solitare": "A K Q",
   CrossWords: "WORD",
   "Meow Clicker": "MEOW",
-  "LAST MAN": "LAST",
+  "LAST MAN": "ENTER THE REALM",
   "Fill the Hole": "BLOCKS"
 };
 

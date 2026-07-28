@@ -451,6 +451,51 @@ h2 {
   transform: scale(0.78) rotate(-22deg);
 }
 
+.game-card.lastman .game-art {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 72% 42%, rgba(255, 207, 96, 0.34), transparent 42%),
+    linear-gradient(135deg, #2b0f58, #5d2a87 58%, #3e263b);
+  color: #fff2bf;
+}
+
+.game-card.lastman .game-art::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, transparent 28%, rgba(22, 6, 47, 0.88));
+  content: "";
+  pointer-events: none;
+}
+
+.game-card.lastman .game-art span {
+  position: absolute;
+  bottom: 16px;
+  left: 18px;
+  z-index: 3;
+  padding: 7px 10px;
+  border: 1px solid rgba(255, 225, 139, 0.62);
+  border-radius: 999px;
+  background: rgba(28, 8, 57, 0.78);
+  color: #fff4c9;
+  font-size: 0.76rem;
+  letter-spacing: 0.13em;
+  text-shadow: 0 0 18px rgba(255, 204, 84, 0.74);
+  backdrop-filter: blur(10px);
+}
+
+.game-card.lastman .game-art img {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
 .game-card.coral .game-art {
   background:
     linear-gradient(135deg, rgba(251, 113, 133, 0.28), transparent 45%),
