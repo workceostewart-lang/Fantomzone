@@ -1,6 +1,6 @@
 import "./styles.css";
 
-document.documentElement.dataset.hubRevision = "2026-07-29-billiards-champion";
+document.documentElement.dataset.hubRevision = "2026-07-29-billiards-tutorial";
 
 const clearLegacyGameCache = () => {
   if (!window.location.hostname.endsWith("fantomzone.app")) return;
@@ -26,7 +26,7 @@ const games = [
   {
     slug: "billiards-champion",
     title: "Billiards Champion",
-    description: "Read every bank, control your spin, and own a fully visible 8-ball table in solo practice, versus CPU, or multiplayer rooms.",
+    description: "Learn every shot in a five-step guided tutorial, then control your spin and own a fully visible 8-ball table solo, versus CPU, or online.",
     url: "/games/billiards-champion/index.html",
     status: "New",
     accent: "billiards",
