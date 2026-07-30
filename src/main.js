@@ -1,6 +1,6 @@
 import "./styles.css";
 
-document.documentElement.dataset.hubRevision = "2026-07-29-golf-masters";
+document.documentElement.dataset.hubRevision = "2026-07-29-billiards-champion";
 
 const clearLegacyGameCache = () => {
   if (!window.location.hostname.endsWith("fantomzone.app")) return;
@@ -23,6 +23,16 @@ const clearLegacyGameCache = () => {
 clearLegacyGameCache();
 
 const games = [
+  {
+    slug: "billiards-champion",
+    title: "Billiards Champion",
+    description: "Read every bank, control your spin, and own a fully visible 8-ball table in solo practice, versus CPU, or multiplayer rooms.",
+    url: "https://billiards-champion.fantomzone.app",
+    status: "New",
+    accent: "billiards",
+    image: "/billiards-champion-cover.png",
+    imageLoading: "eager"
+  },
   {
     slug: "last-man",
     title: "LAST MAN",
@@ -137,6 +147,7 @@ const upcoming = [
 ];
 
 const artLabels = {
+  "Billiards Champion": "OWN THE TABLE",
   "Golf Masters": "READ THE GREEN",
   "Gambl BlackJack": "READ THE TABLE",
   "Wheel of Goods": "SPIN • ANSWER • WIN",
