@@ -27,7 +27,7 @@ const games = [
     slug: "billiards-champion",
     title: "Billiards Champion",
     description: "Read every bank, control your spin, and own a fully visible 8-ball table in solo practice, versus CPU, or multiplayer rooms.",
-    url: "https://billiards-champion.fantomzone.app",
+    url: "/games/billiards-champion/index.html",
     status: "New",
     accent: "billiards",
     image: "/billiards-champion-cover.png",
