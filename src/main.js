@@ -37,7 +37,7 @@ const games = [
     slug: "golf-masters",
     title: "Golf Masters",
     description: "Read the green, bank around shifting obstacles, and master more than 1,500 puzzle-first golf courses on desktop or mobile.",
-    url: "https://golf-masters.unknownfigure.chatgpt.site",
+    url: "https://golf-masters.fantomzone.app",
     status: "New",
     accent: "golf",
     image: "/golf-masters-cover-20260729.png",
