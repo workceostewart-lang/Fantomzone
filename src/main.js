@@ -1,6 +1,6 @@
 import "./styles.css";
 
-document.documentElement.dataset.hubRevision = "2026-07-27-wheel-ios-2";
+document.documentElement.dataset.hubRevision = "2026-07-29-golf-masters";
 
 const clearLegacyGameCache = () => {
   if (!window.location.hostname.endsWith("fantomzone.app")) return;
@@ -31,6 +31,16 @@ const games = [
     status: "Remastered",
     accent: "lastman",
     image: "/last-man-cover.jpg",
+    imageLoading: "eager"
+  },
+  {
+    slug: "golf-masters",
+    title: "Golf Masters",
+    description: "Read the green, bank around shifting obstacles, and master more than 1,500 puzzle-first golf courses on desktop or mobile.",
+    url: "https://golf-masters.unknownfigure.chatgpt.site",
+    status: "New",
+    accent: "golf",
+    image: "/golf-masters-cover-20260729.png",
     imageLoading: "eager"
   },
   {
@@ -127,6 +137,7 @@ const upcoming = [
 ];
 
 const artLabels = {
+  "Golf Masters": "READ THE GREEN",
   "Gambl BlackJack": "READ THE TABLE",
   "Wheel of Goods": "SPIN • ANSWER • WIN",
   "Family War": "OWN THE BOARD",
