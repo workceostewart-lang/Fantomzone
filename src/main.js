@@ -1,6 +1,6 @@
 import "./styles.css";
 
-document.documentElement.dataset.hubRevision = "2026-08-03-sport-bowling";
+document.documentElement.dataset.hubRevision = "2026-08-04-bowling-controls";
 
 const clearLegacyGameCache = () => {
   if (!window.location.hostname.endsWith("fantomzone.app")) return;
@@ -26,7 +26,7 @@ const games = [
   {
     slug: "sport-bowling",
     title: "Sport Bowling",
-    description: "Pass, play, and cheer through family-friendly ten-pin bowling with smart bumpers, one-swipe controls, official scoring, and a phone motion remote.",
+    description: "Pass, play, and cheer through family-friendly ten-pin bowling with skill-based swipes, official scoring, TV Mode, and gyroscope phone controllers.",
     url: "https://bowling.fantomzone.app",
     status: "New",
     accent: "bowling"
