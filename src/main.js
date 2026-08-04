@@ -27,7 +27,7 @@ const games = [
     slug: "sport-bowling",
     title: "Sport Bowling",
     description: "Pass, play, and cheer through family-friendly ten-pin bowling with smart bumpers, one-swipe controls, official scoring, and a phone motion remote.",
-    url: "https://sport-bowling.fantomzone.app",
+    url: "https://bowling.fantomzone.app",
     status: "New",
     accent: "bowling"
   },
