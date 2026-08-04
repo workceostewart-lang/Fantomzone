@@ -1,6 +1,6 @@
 import "./styles.css";
 
-document.documentElement.dataset.hubRevision = "2026-07-29-billiards-tutorial";
+document.documentElement.dataset.hubRevision = "2026-08-03-sport-bowling";
 
 const clearLegacyGameCache = () => {
   if (!window.location.hostname.endsWith("fantomzone.app")) return;
@@ -23,6 +23,14 @@ const clearLegacyGameCache = () => {
 clearLegacyGameCache();
 
 const games = [
+  {
+    slug: "sport-bowling",
+    title: "Sport Bowling",
+    description: "Pass, play, and cheer through family-friendly ten-pin bowling with smart bumpers, one-swipe controls, official scoring, and a phone motion remote.",
+    url: "https://sport-bowling.fantomzone.app",
+    status: "New",
+    accent: "bowling"
+  },
   {
     slug: "billiards-champion",
     title: "Billiards Champion",
@@ -147,6 +155,7 @@ const upcoming = [
 ];
 
 const artLabels = {
+  "Sport Bowling": "PASS • PLAY • CHEER",
   "Billiards Champion": "OWN THE TABLE",
   "Golf Masters": "READ THE GREEN",
   "Gambl BlackJack": "READ THE TABLE",
