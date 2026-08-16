@@ -8,14 +8,12 @@ const clearLegacyGameCache = () => {
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker
       .getRegistrations()
-      .then((registrations) => Promise.all(registrations.map((registration) => registration.unregister())))
-      .catch(() => undefined);
-  }
-
-  if ("caches" in window) {
-    caches
-      .keys()
-      .then((keys) => Promise.all(keys.map((key) => caches.delete(key))))
+      .then((registrations) => Promise.all(registrations
+        .filter((registration) => {
+          const scriptUrl = registration.active?.scriptURL || registration.installing?.scriptURL || registration.waiting?.scriptURL || "";
+          return new URL(registration.scope).pathname === "/" && new URL(scriptUrl).pathname === "/service-worker.js";
+        })
+        .map((registration) => registration.unregister())))
       .catch(() => undefined);
   }
 };
@@ -23,6 +21,14 @@ const clearLegacyGameCache = () => {
 clearLegacyGameCache();
 
 const games = [
+  {
+    slug: "archery-masters",
+    title: "Archery Masters",
+    description: "Aim true in a cinematic physics duel with room-code lobbies, visible health bars, and touch-first controls built for phone or PC.",
+    url: "/games/archery-masters/index.html",
+    status: "New",
+    accent: "archery"
+  },
   {
     slug: "sport-bowling",
     title: "Sport Bowling",
@@ -155,6 +161,7 @@ const upcoming = [
 ];
 
 const artLabels = {
+  "Archery Masters": "MAKE YOUR MARK",
   "Sport Bowling": "PASS • PLAY • CHEER",
   "Billiards Champion": "OWN THE TABLE",
   "Golf Masters": "READ THE GREEN",
