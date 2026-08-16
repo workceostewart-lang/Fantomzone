@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#111827" />
+    <title>Archery Masters — Fantom Zone</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <main class="app-shell" id="app">
+      <header class="topbar">
+        <button class="brand" data-action="home" aria-label="Back to home">
+          <span class="brand-mark"><span></span><span></span><span></span></span>
+          <span>ARCHERY<br /><b>MASTERS</b></span>
+        </button>
+        <div class="topbar-meta">
+          <span class="online-dot"></span>
+          <span id="status-label">ONLINE • FANTOM ZONE</span>
+          <button class="icon-button" data-action="settings" aria-label="Open settings">⚙</button>
+        </div>
+      </header>
+
+      <section class="screen screen-home is-active" data-screen="home">
+        <div class="home-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> TURN-BASED PHYSICS DUELS</p>
+            <h1>MAKE YOUR<br /><em>MARK.</em></h1>
+            <p class="hero-subtitle">Aim true. Break the arena.<br />Leave a legend behind.</p>
+            <button class="primary-button hero-cta" data-action="play">PLAY DUEL <span>↗</span></button>
+            <div class="quick-links">
+              <button data-action="modes"><span>▦</span> MORE MODES</button>
+              <button data-action="settings"><span>◌</span> SETTINGS</button>
+            </div>
+          </div>
+
+          <div class="hero-arena" aria-label="Archery Masters arena preview">
+            <div class="sun"></div>
+            <div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+            <div class="mountain mountain-back"></div><div class="mountain mountain-front"></div>
+            <div class="hero-archer hero-archer-left">
+              <div class="archer-name">THE SQUIRE <span>01</span></div>
+              <div class="hero-figure">
+                <div class="figure-cape"></div><div class="figure-body blue"></div><div class="figure-head"></div>
+                <div class="figure-bow"></div><div class="figure-leg leg-left"></div><div class="figure-leg leg-right"></div>
+              </div>
+            </div>
+            <div class="hero-archer hero-archer-right">
+              <div class="archer-name">BJORN <span>02</span></div>
+              <div class="hero-figure">
+                <div class="figure-cape red-cape"></div><div class="figure-body red"></div><div class="figure-head beard"></div>
+                <div class="figure-bow bow-right"></div><div class="figure-leg leg-left"></div><div class="figure-leg leg-right"></div>
+              </div>
+            </div>
+            <div class="hero-arrow"><span></span><i></i></div>
+            <div class="hero-ground"><span></span><span></span><span></span></div>
+            <div class="hero-caption"><span>01</span> FIRST TO ZERO <b>HP</b></div>
+          </div>
+        </div>
+        <div class="feature-strip">
+          <div><span class="feature-icon">◎</span><span><b>PHYSICS THAT HURTS</b><small>Every shot tells a story.</small></span></div>
+          <div><span class="feature-icon">↗</span><span><b>ROOM-CODE DUELS</b><small>Bring your crew. Share the code.</small></span></div>
+          <div><span class="feature-icon">✦</span><span><b>NO TRANSACTIONS</b><small>Play to master the arena.</small></span></div>
+        </div>
+      </section>
+
+      <section class="screen screen-modes" data-screen="modes">
+        <div class="section-heading"><div><p class="eyebrow">CHOOSE YOUR SHOT</p><h2>HOW DO YOU<br /><em>WANT TO PLAY?</em></h2></div><button class="text-button" data-action="home">← HOME</button></div>
+        <div class="mode-grid">
+          <button class="mode-card featured" data-action="duel">
+            <span class="card-number">01</span><span class="mode-glyph duel-glyph">↗</span><span class="mode-copy"><b>DUEL</b><small>Take on a rival or test your aim against the arena.</small></span><span class="card-arrow">↗</span>
+          </button>
+          <button class="mode-card" data-action="room">
+            <span class="card-number">02</span><span class="mode-glyph room-glyph">⌘</span><span class="mode-copy"><b>ROOM-CODE DUEL</b><small>Host a lobby or join a friend with a six-character code.</small></span><span class="card-arrow">↗</span>
+          </button>
+          <button class="mode-card" data-action="apple"><span class="card-number">03</span><span class="mode-glyph apple-glyph">●</span><span class="mode-copy"><b>APPLE SHOT</b><small>Precision under pressure. Shrink the target. Don’t miss.</small></span><span class="card-arrow">↗</span></button>
+          <button class="mode-card" data-action="skeet"><span class="card-number">04</span><span class="mode-glyph skeet-glyph">✦</span><span class="mode-copy"><b>SKEET</b><small>Ten shots. One sky. Build the biggest streak.</small></span><span class="card-arrow">↗</span></button>
+        </div>
+      </section>
+
+      <section class="screen screen-room" data-screen="room">
+        <div class="room-card">
+          <button class="text-button" data-action="modes">← MODES</button>
+          <div class="room-title"><p class="eyebrow">PRIVATE MATCH</p><h2>BRING YOUR<br /><em>CREW.</em></h2><p>One code. Two bows. No matchmaking.</p></div>
+          <div class="room-actions">
+            <button class="primary-button" data-action="create-room">CREATE A ROOM <span>↗</span></button>
+            <div class="join-divider"><span>OR JOIN A ROOM</span></div>
+            <div class="join-row"><input id="room-input" maxlength="6" placeholder="ENTER CODE" autocomplete="off" /><button class="secondary-button" data-action="join-room">JOIN <span>↗</span></button></div>
+            <p class="form-note" id="room-note">Codes expire after 10 minutes. Share it with one rival.</p>
+          </div>
+        </div>
+        <div class="room-art"><div class="code-ring"></div><div class="room-arrow">↗</div><p>HOST<br /><b>FIRST.</b></p></div>
+      </section>
+
+      <section class="screen screen-lobby" data-screen="lobby">
+        <div class="lobby-panel">
+          <button class="text-button" data-action="modes">← MODES</button>
+          <div class="lobby-heading"><p class="eyebrow">ROOM READY</p><h2>SHARE THE<br /><em>SHOT.</em></h2></div>
+          <div class="room-code-label">ROOM CODE</div><button class="room-code" id="room-code" data-action="copy-code">------ <span>⧉</span></button><p class="copy-note" id="copy-note">Tap the code to copy it to your clipboard.</p>
+          <div class="lobby-players"><div class="lobby-player ready"><span class="player-avatar blue-avatar">S</span><span><b>YOU</b><small>THE SQUIRE</small></span><i>READY</i></div><div class="lobby-player waiting"><span class="player-avatar empty-avatar">?</span><span><b>RIVAL</b><small>WAITING TO JOIN</small></span><i>OPEN</i></div></div>
+          <button class="primary-button" data-action="start-battle">START PRACTICE <span>↗</span></button>
+          <p class="lobby-footnote">Practice starts locally. When multiplayer is connected, this room will wait for your rival here.</p>
+        </div>
+      </section>
+
+      <section class="screen screen-battle" data-screen="battle">
+        <div class="battle-hud">
+          <button class="hud-back" data-action="modes" aria-label="Exit battle">←</button>
+          <div class="turn-chip"><span class="turn-pulse"></span><span id="turn-label">YOUR TURN</span><b id="turn-timer">15</b></div>
+          <div class="battle-mode-label">DUEL • PRACTICE ARENA</div>
+        </div>
+        <div class="health-bar player-bar"><div class="health-meta"><span>YOU · SQUIRE</span><b id="player-hp">100</b></div><div class="health-track"><span id="player-health"></span></div></div>
+        <div class="health-bar rival-bar"><div class="health-meta"><span>BJORN · AI</span><b id="rival-hp">100</b></div><div class="health-track"><span id="rival-health"></span></div></div>
+        <canvas id="arena-canvas" aria-label="WebGL archery arena"></canvas>
+        <div class="aim-hint" id="aim-hint"><span class="hint-orbit">↙</span><b>DRAG TO AIM</b><small>Pull back, then release</small></div>
+        <div class="battle-toast" id="battle-toast"></div>
+        <div class="battle-controls"><div class="weapon-badge"><span>↗</span><small>STRAIGHT</small><b>ARROW</b></div><div class="shot-meter"><span>POWER</span><div><i id="power-fill"></i></div></div><button class="secondary-button forfeit-button" data-action="modes">FORFEIT</button></div>
+      </section>
+
+      <section class="screen screen-settings" data-screen="settings">
+        <div class="settings-card"><button class="text-button" data-action="home">← HOME</button><p class="eyebrow">TUNE YOUR FLIGHT</p><h2>SETTINGS</h2><label class="setting-row"><span><b>REDUCE CAMERA MOTION</b><small>Static flight view and softer impact effects.</small></span><input type="checkbox" id="reduce-motion" /><i class="toggle"></i></label><label class="setting-row"><span><b>SOUND EFFECTS</b><small>Draw tension, impact stings, and arena ambience.</small></span><input type="checkbox" id="sound-toggle" checked /><i class="toggle"></i></label><div class="setting-row range-row"><span><b>SCREEN SHAKE</b><small>Impact feedback intensity.</small></span><input type="range" id="shake-range" min="0" max="100" value="70" /></div></div>
+      </section>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
+
