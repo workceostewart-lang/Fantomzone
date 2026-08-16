@@ -22,14 +22,6 @@ clearLegacyGameCache();
 
 const games = [
   {
-    slug: "archery-masters",
-    title: "Archery Masters",
-    description: "Aim true in a cinematic physics duel with room-code lobbies, visible health bars, and touch-first controls built for phone or PC.",
-    url: "/games/archery-masters/index.html",
-    status: "New",
-    accent: "archery"
-  },
-  {
     slug: "sport-bowling",
     title: "Sport Bowling",
     description: "Pass, play, and cheer through family-friendly ten-pin bowling with skill-based swipes, official scoring, TV Mode, and gyroscope phone controllers.",
@@ -161,7 +153,6 @@ const upcoming = [
 ];
 
 const artLabels = {
-  "Archery Masters": "MAKE YOUR MARK",
   "Sport Bowling": "PASS • PLAY • CHEER",
   "Billiards Champion": "OWN THE TABLE",
   "Golf Masters": "READ THE GREEN",
