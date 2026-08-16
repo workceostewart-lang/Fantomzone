@@ -119,7 +119,7 @@ const games = [
     slug: "grannies-solitaire",
     title: "Grannie's Solitare",
     description: "A clean, focused Klondike card table.",
-    url: "https://grannies.fantomzone.app/?v=20260816-legacy-state-fix",
+    url: "https://grannies.fantomzone.app/?v=20260816-medium",
     status: "Live",
     accent: "green"
   },
@@ -236,4 +236,5 @@ document.querySelector("#app").innerHTML = `
     </section>
   </main>
 `;
+
 
