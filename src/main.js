@@ -22,6 +22,16 @@ clearLegacyGameCache();
 
 const games = [
   {
+    slug: "gambl-press-ur-luck",
+    title: "Gambl Press ur Luck",
+    description: "Answer trivia to earn spins, slam the button on an 18-square WebGL big board, and bank the big bucks before a Whammy takes the lot.",
+    url: "https://gambl-press-ur-luck.fantomzone.app",
+    status: "New",
+    accent: "roulette",
+    image: "/gambl-press-ur-luck-cover-20260816.jpg",
+    imageLoading: "eager"
+  },
+  {
     slug: "sport-bowling",
     title: "Sport Bowling",
     description: "Pass, play, and cheer through family-friendly ten-pin bowling with skill-based swipes, official scoring, TV Mode, and gyroscope phone controllers.",
@@ -153,6 +163,7 @@ const upcoming = [
 ];
 
 const artLabels = {
+  "Gambl Press ur Luck": "NO WHAMMIES",
   "Sport Bowling": "PASS • PLAY • CHEER",
   "Billiards Champion": "OWN THE TABLE",
   "Golf Masters": "READ THE GREEN",
