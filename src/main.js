@@ -25,7 +25,7 @@ const games = [
     slug: "gambl-press-ur-luck",
     title: "Gambl Press ur Luck",
     description: "Answer trivia to earn spins, slam the button on an 18-square WebGL big board, and bank the big bucks before a Whammy takes the lot.",
-    url: "https://gambl-press-ur-luck.fantomzone.app",
+    url: "https://gambl-press-ur-luck.workceostewart.workers.dev",
     status: "New",
     accent: "roulette",
     image: "/gambl-press-ur-luck-cover-20260816.jpg",
