@@ -23,7 +23,7 @@ clearLegacyGameCache();
 const games = [
   {
     slug: "gamble-balatro",
-    title: "Gamble Balatro",
+    title: "Gambl Balatro",
     description: "Build poker hands, stack original Jokers, and take on the house in a casino roguelike. Play the solo preview on desktop or a fully visible landscape mobile table.",
     url: "https://balatro.fantomzone.app",
     status: "Solo Preview",
@@ -173,7 +173,7 @@ const upcoming = [
 ];
 
 const artLabels = {
-  "Gamble Balatro": "BUILD YOUR HAND. BREAK THE HOUSE.",
+  "Gambl Balatro": "BUILD YOUR HAND. BREAK THE HOUSE.",
   "Gambl Press ur Luck": "NO WHAMMIES",
   "Sport Bowling": "PASS • PLAY • CHEER",
   "Billiards Champion": "OWN THE TABLE",
