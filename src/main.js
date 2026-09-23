@@ -22,6 +22,26 @@ clearLegacyGameCache();
 
 const games = [
   {
+    slug: "gamble-balatro",
+    title: "Gamble Balatro",
+    description: "Build poker hands, stack original Jokers, and take on the house in a casino roguelike. Play the solo preview on desktop or a fully visible landscape mobile table.",
+    url: "https://balatro.fantomzone.app",
+    status: "Solo Preview",
+    accent: "roulette",
+    image: "/gamble-balatro-cover-20260922.png",
+    imageLoading: "eager"
+  },
+  {
+    slug: "gambl-press-ur-luck",
+    title: "Gambl Press ur Luck",
+    description: "Answer trivia to earn spins, slam the button on an 18-square WebGL big board, and bank the big bucks before a Whammy takes the lot.",
+    url: "https://gambl-press-ur-luck.workceostewart.workers.dev",
+    status: "New",
+    accent: "roulette",
+    image: "/gambl-press-ur-luck-cover-20260816.jpg",
+    imageLoading: "eager"
+  },
+  {
     slug: "sport-bowling",
     title: "Sport Bowling",
     description: "Pass, play, and cheer through family-friendly ten-pin bowling with skill-based swipes, official scoring, TV Mode, and gyroscope phone controllers.",
@@ -117,7 +137,7 @@ const games = [
     slug: "grannies-solitaire",
     title: "Grannie's Solitare",
     description: "A clean, focused Klondike card table.",
-    url: "https://grannies.fantomzone.app/?v=20260816-medium-migration",
+    url: "https://grannies.fantomzone.app",
     status: "Live",
     accent: "green"
   },
@@ -153,6 +173,8 @@ const upcoming = [
 ];
 
 const artLabels = {
+  "Gamble Balatro": "BUILD YOUR HAND. BREAK THE HOUSE.",
+  "Gambl Press ur Luck": "NO WHAMMIES",
   "Sport Bowling": "PASS • PLAY • CHEER",
   "Billiards Champion": "OWN THE TABLE",
   "Golf Masters": "READ THE GREEN",
@@ -234,6 +256,3 @@ document.querySelector("#app").innerHTML = `
     </section>
   </main>
 `;
-
-
-
