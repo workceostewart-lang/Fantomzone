@@ -135,7 +135,8 @@ const games = [
   },
   {
     slug: "grannies-solitaire",
-    title: "Grannie's Solitare",
+    image: "/grannies-solitaire-cover.png",
+    title: "Grannie's Solitaire",
     description: "A clean, focused Klondike card table.",
     url: "https://grannies.fantomzone.app",
     status: "Live",
@@ -184,7 +185,7 @@ const artLabels = {
   "Gambl Roulette": "PLACE YOUR BETS",
   "Gambl Poker": "OWN THE POT",
   "Ultimate PONG!!": "PONG",
-  "Grannie's Solitare": "A K Q",
+  "Grannie's Solitaire": "A K Q",
   CrossWords: "WORD",
   "Meow Clicker": "MEOW",
   "LAST MAN": "ENTER THE REALM",

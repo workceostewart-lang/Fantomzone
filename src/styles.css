@@ -752,3 +752,8 @@ h2 {
     min-height: 380px;
   }
 }
+
+/* Solitaire remaster cover; retain the existing Play link. */
+.game-card[data-game="grannies-solitaire"] .game-art { position: relative; overflow: hidden; background: #004325; }
+.game-card[data-game="grannies-solitaire"] .game-art span { visibility: hidden; }
+.game-card[data-game="grannies-solitaire"] .game-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center; }
