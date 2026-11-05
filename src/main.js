@@ -28,7 +28,7 @@ const games = [
     url: "/games/asteroid-run/",
     status: "New",
     accent: "coral",
-    image: "/asteroid-run-cover.png",
+    image: "/asteroid-run-space-cover.png",
     imageLoading: "eager"
   },
   {
