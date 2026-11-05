@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#070d18"><title>Asteroid Run — Orange Rocket</title><link rel="stylesheet" href="style.css"><script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script></head>
+<body><main id="game"><canvas id="space" aria-label="3D asteroid field"></canvas>
+<header><div class="brand"><i></i> ORANGE ROCKET <span>/ ASTEROID RUN</span></div><button id="pause" aria-label="Pause game" hidden>Ⅱ <span>PAUSE</span></button></header>
+<section class="telemetry"><div><label>DISTANCE</label><strong id="distance">00000<span> m</span></strong></div><div><label>PERSONAL BEST</label><strong id="best">00000<span> m</span></strong></div></section>
+<div class="sector">DEEP SPACE <span id="sector">SECTOR 01</span></div>
+<div id="notice" role="status"></div><div id="flash"></div>
+<section id="overlay"><div class="intro"><p class="eyebrow" id="eyebrow">FLIGHT 001 · ALL SYSTEMS READY</p><h1 id="title">A little rocket.<br>A lot of rocks.</h1><p id="description">Slip through the asteroid belt. Find your opening.<br>Hold Space and leave a trail.</p><button id="start" class="primary" disabled>Preparing rocket…</button><div class="controls"><span><kbd>↑</kbd><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd> STEER</span><span><kbd>SPACE</kbd> BOOST</span><span><kbd>P</kbd> PAUSE</span></div></div></section>
+<footer><div class="shields"><label>HULL INTEGRITY</label><div id="shields">◆ ◆ ◆</div></div><div class="boost"><div><label>BOOST RESERVE</label><span id="fuel-label">100%</span></div><div class="track"><div id="fuel"></div></div><small id="boost-hint">HOLD SPACE TO BOOST</small></div><div class="speed"><label>VELOCITY</label><strong id="speed">0<span> m/s</span></strong></div></footer>
+<div id="touch" aria-label="Touch flight controls"><div class="stick-wrap"><button id="joystick" aria-label="Flight joystick: drag to steer" aria-describedby="stick-help"><span id="stick-knob"></span></button><span id="stick-help">DRAG TO STEER</span></div><button id="touch-boost" aria-label="Hold to boost">BOOST<span>HOLD</span></button></div>
+</main><script type="module" src="game.js"></script></body></html>
