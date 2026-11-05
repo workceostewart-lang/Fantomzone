@@ -22,6 +22,16 @@ clearLegacyGameCache();
 
 const games = [
   {
+    slug: "asteroid-run",
+    title: "Asteroid Run",
+    description: "Pilot an orange-window rocket through a 3D asteroid belt. Dodge with arrow keys or the mobile joystick, hold boost, and beat your best distance.",
+    url: "/games/asteroid-run/",
+    status: "New",
+    accent: "coral",
+    image: "/asteroid-run-cover.png",
+    imageLoading: "eager"
+  },
+  {
     slug: "gamble-balatro",
     title: "Gambl Balatro",
     description: "Build poker hands, stack original Jokers, and take on the house in a casino roguelike. Play the solo preview on desktop or a fully visible landscape mobile table.",
@@ -174,6 +184,7 @@ const upcoming = [
 ];
 
 const artLabels = {
+  "Asteroid Run": "DODGE · BOOST · SURVIVE",
   "Gambl Balatro": "BUILD YOUR HAND. BREAK THE HOUSE.",
   "Gambl Press ur Luck": "NO WHAMMIES",
   "Sport Bowling": "PASS • PLAY • CHEER",
