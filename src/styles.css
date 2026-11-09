@@ -774,3 +774,7 @@ h2 {
 .game-card[data-game="grannies-solitaire"] .game-art { position: relative; overflow: hidden; background: #004325; }
 .game-card[data-game="grannies-solitaire"] .game-art span { visibility: hidden; }
 .game-card[data-game="grannies-solitaire"] .game-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; object-position: center; }
+
+.game-card[data-game="sprt-gt3"] .game-art { position:relative; aspect-ratio:16/9; overflow:hidden; background:#201b1d; }
+.game-card[data-game="sprt-gt3"] .game-art span { display:none; }
+.game-card[data-game="sprt-gt3"] .game-art img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }

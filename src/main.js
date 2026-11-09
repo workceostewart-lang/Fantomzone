@@ -22,6 +22,16 @@ clearLegacyGameCache();
 
 const games = [
   {
+    slug: "sprt-gt3",
+    title: "Sprt GT3",
+    description: "Race three GT3 cars on a full 3D circuit. Take on Rookie, Club or Pro CPUs across three laps, or invite friends with a room code. Mobile steering arrows, gas and brake pedals included.",
+    url: "/games/sprt-gt3/",
+    status: "New",
+    accent: "coral",
+    image: "/sprt-gt3-cover.png",
+    imageLoading: "eager"
+  },
+  {
     slug: "asteroid-run",
     title: "Asteroid Run",
     description: "Pilot an orange-window rocket through a 3D asteroid belt. Dodge with arrow keys or the mobile joystick, hold boost, and beat your best distance.",
@@ -184,6 +194,7 @@ const upcoming = [
 ];
 
 const artLabels = {
+  "Sprt GT3": "THREE LAPS · ONE WINNER",
   "Asteroid Run": "DODGE · BOOST · SURVIVE",
   "Gambl Balatro": "BUILD YOUR HAND. BREAK THE HOUSE.",
   "Gambl Press ur Luck": "NO WHAMMIES",
